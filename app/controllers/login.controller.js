@@ -24,7 +24,6 @@ async function register(req, res){
     });
 
     profile.save().then(data => {
-        console.log("HOla")
         res.send(data);
     }).catch(err => {
         res.status(500).send({
